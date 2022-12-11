@@ -10,7 +10,8 @@ export const CustomSider:FC<{}> = (props) => {
     return (
 
     <Sider collapsible collapsed={collapsed} onCollapse={(value) => setCollapsed(value)}>
-        <div className="logo" />
-        <CustomMenu/>
+           <div className="logo" />
+            <CustomMenu/>
+
     </Sider>
 )}

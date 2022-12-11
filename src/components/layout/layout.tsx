@@ -1,13 +1,11 @@
 import { Layout } from "antd"
 import { Content, Footer } from "antd/es/layout/layout"
 import { FC } from "react"
-import { RouterProvider } from "react-router-dom"
-import { router } from "../../config/routing"
+import { CustomRouter } from "../../config/routing"
 import { CustomBreadcrumbs } from "./breadcrumb/breadcrumb"
+import { CustomFooter } from "./footer/footer"
 import { CustomHeader } from "./header/header"
 import { CustomSider } from "./sider/sider"
-
-
 
 export const CustomLayout:FC<{}> = () => {
     return (
@@ -17,9 +15,9 @@ export const CustomLayout:FC<{}> = () => {
             <CustomHeader />
           <Content style={{ margin: '0 16px' }}>
            <CustomBreadcrumbs/>
-           <RouterProvider router={router}></RouterProvider>
+           <CustomRouter/>
           </Content>
-          <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
+          <CustomFooter />
         </Layout>
       </Layout>
     )

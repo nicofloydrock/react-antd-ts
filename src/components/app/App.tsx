@@ -5,10 +5,7 @@ import { CustomLayout } from '../layout/layout';
 function App() {
   return (
     <div className="App">
-   
-
       <CustomLayout />
-
      </div>
   );
 }
