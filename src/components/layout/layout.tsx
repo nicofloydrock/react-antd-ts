@@ -17,6 +17,7 @@ export const CustomLayout:FC<{}> = () => {
             <CustomHeader />
           <Content style={{ margin: '0 16px' }}>
            <CustomBreadcrumbs/>
+           <RouterProvider router={router}></RouterProvider>
           </Content>
           <Footer style={{ textAlign: 'center' }}>Ant Design ©2018 Created by Ant UED</Footer>
         </Layout>
