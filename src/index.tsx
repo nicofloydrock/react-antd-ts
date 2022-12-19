@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import { BrowserRouter } from 'react-router-dom';
 import App from './components/app/App';
 import reportWebVitals from './config/reportWebVitals';
+import registerServiceWorker from '../src/config/registerServiceWorker';
 import './index.css';
 
 const root = ReactDOM.createRoot(
@@ -23,3 +24,4 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CaRA-vitals
 reportWebVitals();
+registerServiceWorker();
